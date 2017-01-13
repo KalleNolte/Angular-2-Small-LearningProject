@@ -1,0 +1,21 @@
+<md-sidenav-container  class="sidenav-container">
+  <md-toolbar fxFlexAlign="row" fyFlexAlign="space-between" class="toolbar">
+    <md-icon (click)="sidenavStatus = !sidenavStatus"
+               *ngIf="!sidenavStatus" >menu
+    </md-icon>
+
+    <h4 style="margin-left: 10px;">Kalles HomeManagement</h4>
+
+    <!-- <md-icon>more_vert</md-icon> -->
+  </md-toolbar> 
+
+  <md-sidenav mode="push" [opened]="sidenavStatus" #sidenav class="sidenav">
+    <div class="sidenav-content">
+        <button *ngIf="sidenavStatus" md-button (click)="sidenavStatus = !sidenavStatus">
+            Close Sidenav
+        </button>
+    </div>
+  </md-sidenav>
+
+  <router-outlet></router-outlet>
+</md-sidenav-container>

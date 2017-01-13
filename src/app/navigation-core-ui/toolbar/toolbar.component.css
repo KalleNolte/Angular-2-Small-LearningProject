@@ -1,0 +1,23 @@
+.toolbar{
+    background-color: slategrey;
+    
+}
+
+.spacer{
+    flex: 1 1 auto;
+}
+.sidenav-container{
+    height: 100vh;
+}
+
+.sidenav{
+    height: 100vh;
+}
+
+md-icon{
+    color: white;
+}
+
+h4{
+    color: white
+}

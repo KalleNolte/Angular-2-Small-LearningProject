@@ -1,0 +1,11 @@
+<md-input-container>
+  <input md-input name="noteValue" [(ngModel)]="noteValue" type="text">
+</md-input-container>
+
+<button 
+    (click)="addNote()" 
+    md-icon-button>
+      <md-icon>
+        add
+      </md-icon>
+</button>
